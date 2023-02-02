@@ -1,0 +1,10 @@
+[alias]
+	last = log -1 HEAD
+	l = log --oneline
+	s = status
+	amend = commit --amend
+	ss = status -s
+	ai = add -i --all
+	a = add --all
+	graph = log --graph --all --format='%C(auto)%h %d %s %+(trailers:separator= | )'
+
