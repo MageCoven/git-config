@@ -13,6 +13,13 @@
     # Quickhand for merge
     mn = merge
 
+    # Quickhand for commit
+    c = commit
+    # Add all and commit
+    ca = !git add --all && git commit
+    # Add all, commit and push
+    cap = !git add --all && git commit && git push
+
     # Show list of aliases, takem from u/AndreDaGiant on r/git
     alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
 
