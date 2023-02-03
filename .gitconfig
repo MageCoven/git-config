@@ -43,3 +43,9 @@
     # Graph
     g = !git sl --graph
 
+    # Stash all files
+    sa = stash --include-untracked
+    # Stash
+    shp = stash
+    # Pop stash
+    shp = stash pop
