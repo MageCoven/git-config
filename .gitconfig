@@ -6,6 +6,12 @@
     a = add
     amend = commit --amend
     cp = cherry-pick
+    
+    # Merge without fast forward
+    m = merge --no-ff
+
+    # Quickhand for merge
+    mn = merge
 
     # Show list of aliases, takem from u/AndreDaGiant on r/git
     alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
