@@ -40,5 +40,6 @@
     l = log --oneline
     # Short log
     sl = log --oneline -15
-    graph = !git sl --graph
+    # Graph
+    g = !git sl --graph
 
