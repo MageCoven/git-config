@@ -10,6 +10,9 @@
     # Show list of aliases, takem from u/AndreDaGiant on r/git
     alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
 
+    # Commit and push all
+    p = !git commit && git push
+
     # Go to master or main quickly
     master = checkout master
     main = checkout main
