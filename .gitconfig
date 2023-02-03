@@ -41,7 +41,7 @@
     # Short log
     sl = log --oneline -15
     # Graph
-    g = !git sl --graph
+    g = !git l --graph
 
     # Stash all files
     sa = stash --include-untracked
