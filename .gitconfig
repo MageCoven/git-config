@@ -1,10 +1,28 @@
 [alias]
-	last = log -1 HEAD
-	l = log --oneline
-	s = status
-	amend = commit --amend
-	ss = status -s
-	ai = add -i --all
-	a = add --all
-	graph = log --graph --all --format='%C(auto)%h %d %s %+(trailers:separator= | )'
+    unstage = reset HEAD --
+    last = log -n 1
+    st = status
+    s = status -s
+    a = add
+    amend = commit --amend
+    cp = cherry-pick
+
+    # Show list of aliases, takem from u/AndreDaGiant on r/git
+    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+
+    # Go to master or main quickly
+    master = checkout master
+    main = checkout main
+
+    # Start repo in current directory
+    this = !git init && git add . && git commit -m \"Initial commit\"
+
+    # Show latest tag
+    lt = describe --tags --abbrev=0
+
+    # Logs
+    l = log --oneline
+    # Short log
+    sl = log --oneline -15
+    graph = !git sl --graph
 
