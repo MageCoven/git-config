@@ -8,10 +8,10 @@
     cp = cherry-pick
     
     # Merge without fast forward
-    m = merge --no-ff
+    m = merge --no-ff -e
 
     # Quickhand for merge
-    mn = merge
+    mn = merge -e
 
     # Quickhand for commit
     c = commit
