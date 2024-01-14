@@ -1,51 +1,52 @@
 [alias]
-    unstage = reset HEAD --
-    last = log -n 1
-    st = status
-    s = status -s
-    a = add
-    amend = commit --amend
-    cp = cherry-pick
+	unstage = reset HEAD --
+	discard = reset --hard
+	last = log -n 1
+	st = status
+	s = status -s
+	a = add
+	amend = commit --amend
+	cp = cherry-pick
     
-    # Merge without fast forward
-    m = merge --no-ff -e
+        # Merge without fast forward
+    	m = merge --no-ff -e
 
-    # Quickhand for merge
-    mn = merge -e
+	# Quickhand for merge
+    	mn = merge -e
 
-    # Quickhand for commit
-    c = commit
-    # Add all and commit
-    ca = !git add --all && git commit
-    # Add all, commit and push
-    cap = !git add --all && git commit && git push
+    	# Quickhand for commit
+    	c = commit
+    	# Add all and commit
+    	ca = !git add --all && git commit
+    	# Add all, commit and push
+    	cap = !git add --all && git commit && git push
 
-    # Show list of aliases, takem from u/AndreDaGiant on r/git
-    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+    	# Show list of aliases, takem from u/AndreDaGiant on r/git
+    	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
 
-    # Commit and push all
-    p = !git commit && git push
+    	# Commit and push all
+    	p = !git commit && git push
 
-    # Go to master or main quickly
-    master = checkout master
-    main = checkout main
+    	# Go to master or main quickly
+    	master = checkout master
+    	main = checkout main
 
-    # Start repo in current directory
-    this = !git init && git add . && git commit -m \"Initial commit\"
+    	# Start repo in current directory
+    	this = !git init && git add . && git commit -m \"Initial commit\"
 
-    # Show latest tag
-    lt = describe --tags --abbrev=0
+    	# Show latest tag
+    	lt = describe --tags --abbrev=0
 
-    # Logs
-    l = log --oneline
-    # Short log
-    sl = log --oneline -15
-    # Graph
-    g = !git l --graph
+   	# Logs
+    	l = log --oneline
+    	# Short log
+    	sl = log --oneline -15
+    	# Graph
+    	g = !git l --graph
 
-    # Stash all files
-    sa = stash --include-untracked
-    # Stash
-    sh = stash
-    # Pop stash
-    shp = stash pop
+    	# Stash all files
+    	sa = stash --include-untracked
+    	# Stash
+    	sh = stash
+    	# Pop stash
+    	shp = stash pop
